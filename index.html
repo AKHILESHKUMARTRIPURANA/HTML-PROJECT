@@ -523,7 +523,7 @@
     <center>
         <table>
             <tr>
-                <th>Starting Position:</th>
+                <th align="left">Starting Position:</th>
                 <td>
                     <table border="1px">
                         <tr>
@@ -537,7 +537,7 @@
                 </td>
             </tr>
             <tr>
-                <th>Black moves ahead:</th>
+                <th align="left">Black moves ahead:</th>
                 <td>
                     <table border="1px">
                         <tr>
@@ -551,7 +551,7 @@
                 </td>
             </tr>
             <tr>
-                <th>White Jumps:</th>
+                <th align="left">White Jumps:</th>
                 <td>
                     <table border="1px">
                         <tr>
@@ -565,7 +565,7 @@
                 </td>
             </tr>
             <tr>
-                <th>Black moves ahead:</th>
+                <th align="left">Black moves ahead:</th>
                 <td>
                     <table border="1px">
                         <tr>
@@ -579,7 +579,7 @@
                 </td>
             </tr>
             <tr>
-                <th>Black Jumps:</th>
+                <th align="left">Black Jumps:</th>
                 <td>
                     <table border="1px">
                         <tr>
@@ -593,7 +593,7 @@
                 </td>
             </tr>
             <tr>
-                <th>White moves ahead:</th>
+                <th align="left">White moves ahead:</th>
                 <td>
                     <table border="1px">
                         <tr>
@@ -606,7 +606,7 @@
                     </table>
                 </td>
             </tr>
-            <th>Struck!</th>
+            <th align="left">Struck!</th>
         </table>
     </center>
     <p>The backtracking method is named solvable and returns a boolean. In solvable we shall need to check whether we are at a leaf, which in this case means a position from which no further moves are possible. This isn't so easy.</p>
@@ -650,26 +650,88 @@
     </table>
     <p>Along with canMove and makeMove, we are using methods puzzleSolved and printBoard with meanings that should be obvious.</p>
     <p>Here is some output from the program:</p>
-    <ol start="16" reversed> 
+    <p>
         <b>
-        <li>WHITE WHITE WHITE ___ BLACK BLACK BLACK</li>
-        <li>WHITE WHITE WHITE BLACK ___ BLACK BLACK</li>
-        <li>WHITE WHITE ___ BLACK WHITE BLACK BLACK</li>
-        <li>WHITE ___ WHITE BLACK WHITE BLACK BLACK</li>
-        <li>WHITE BLACK WHITE ___ WHITE BLACK BLACK</li>
-        <li>WHITE BLACK WHITE BLACK WHITE ___ BLACK</li>
-        <li>WHITE BLACK WHITE BLACK WHITE BLACK ___</li>
-        <li>WHITE BLACK WHITE BLACK ___ BLACK WHITE</li>
-        <li>WHITE BLACK ___ BLACK WHITE BLACK WHITE</li>
-        <li>___ BLACK WHITE BLACK WHITE BLACK WHITE</li>
-        <li>BLACK ___ WHITE BLACK WHITE BLACK WHITE</li>
-        <li>BLACK BLACK WHITE ___ WHITE BLACK WHITE</li>
-        <li>BLACK BLACK WHITE BLACK WHITE ___ WHITE</li>
-        <li>BLACK BLACK WHITE BLACK ___ WHITE WHITE</li>
-        <li>BLACK BLACK ___ BLACK WHITE WHITE WHITE</li>
-        <li>BLACK BLACK BLACK ___ WHITE WHITE WHITE</li>
+        <span style="color: blue;">16.</span>
+        <span style="color: black;">WHITE WHITE WHITE ___ BLACK BLACK BLACK</span>
         </b>
-    </ol>
+        <br>
+        <b>
+        <span style="color: blue;">15.</span>
+        <span style="color: black;">WHITE WHITE WHITE BLACK ___ BLACK BLACK</span>
+        </b>
+        <br>
+        <b>
+        <span style="color: blue;">14.</span>
+        <span style="color: black;">WHITE WHITE ___ BLACK WHITE BLACK BLACK</span>
+        </b>
+        <br>
+        <b>
+        <span style="color: blue;">13.</span>
+        <span style="color: black;">WHITE ___ WHITE BLACK WHITE BLACK BLACK</span>
+        </b>
+        <br>
+        <b>
+        <span style="color: blue;">12.</span>
+        <span style="color: black;">WHITE BLACK WHITE ___ WHITE BLACK BLACK</span>
+        </b>
+        <br>
+        <b>
+        <span style="color: blue;">11.</span>
+        <span style="color: black;">WHITE BLACK WHITE BLACK WHITE ___ BLACK</span>
+        </b>
+        <br>
+        <b>
+            <span style="color: blue;">10.</span>
+            <span style="color: black;">WHITE BLACK WHITE BLACK WHITE BLACK ___</span>
+        </b>
+        <br>
+        <b>
+            <span style="color: blue;">09.</span>
+            <span style="color: black;">WHITE BLACK WHITE BLACK ___ BLACK WHITE</span>
+        </b>
+        <br>
+        <b>
+            <span style="color: blue;">08.</span>
+            <span style="color: black;">WHITE BLACK ___ BLACK WHITE BLACK WHITE</span>
+        </b>
+        <br>
+        <b>
+            <span style="color: blue;">07.</span>
+            <span style="color: black;">___ BLACK WHITE BLACK WHITE BLACK WHITE</span>
+        </b>
+        <br>
+        <b>
+            <span style="color: blue;">06.</span>
+            <span style="color: black;">BLACK ___ WHITE BLACK WHITE BLACK WHITE</span>
+        </b>
+        <br>
+        <b>
+            <span style="color: blue;">05.</span>
+            <span style="color: black;">BLACK BLACK WHITE ___ WHITE BLACK WHITE</span>
+        </b>
+        <br>
+        <b>
+            <span style="color: blue;">04.</span>
+            <span style="color: black;">BLACK BLACK WHITE BLACK WHITE ___ WHITE</span>
+        </b>
+        <br>
+        <b>
+            <span style="color: blue;">03.</span>
+            <span style="color: black;">BLACK BLACK WHITE BLACK ___ WHITE WHITE</span>
+        </b>
+        <br>
+        <b>
+            <span style="color: blue;">02.</span>
+            <span style="color: black;">BLACK BLACK ___ BLACK WHITE WHITE WHITE</span>
+        </b>
+        <br>
+        <b>
+            <span style="color: blue;">01.</span>
+            <span style="color: black;">BLACK BLACK BLACK ___ WHITE WHITE WHITE</span>
+        </b>
+        <br>
+    </p>
     <p style="background-color:#858585;">Notice that the solution is given in reverse order: BLACK starts out on the left and WHITE on the right, as in the last line. I've added line numbers to the actual output in order to emphasize this point. Backtracking always produces its results (sequence of choices) in reverse order; it is up to you, the programmer, to reverse the results again to get them in the correct order.</p>
 </body>
 </html>
